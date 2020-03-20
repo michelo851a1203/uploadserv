@@ -47,7 +47,7 @@ app.post('/upload', multer.any(), (req, res) => {
             msg: 'OK'
         })
     })
-    res.status(200).send(isSuccess)
+    res.status(200).json(isSuccess)
 })
 
 app.get('/showFile/:imageName/:mimetype', (req, res) => {
